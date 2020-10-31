@@ -1,4 +1,4 @@
-board = [
+"""board = [
     [7,8,0,4,0,0,1,2,0],
     [6,0,0,0,7,5,0,0,9],
     [0,0,0,6,0,1,0,7,8],
@@ -9,7 +9,7 @@ board = [
     [1,2,0,0,0,7,4,0,0],
     [0,4,9,2,0,6,0,0,7]
 ]
-
+"""
 def valid(bo, num, pos):
     for i in range(len(bo[0])):
         if bo[pos[0]][i] == num and pos[1] != i:
@@ -68,8 +68,3 @@ def solve(bo):
 
     return False
 
-print_board(board)
-print("\n")
-solve(board)
-print("\n")
-print_board(board)
